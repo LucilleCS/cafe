@@ -1,8 +1,14 @@
 import './App.css';
+import Tree from "./components/Tree"
 
 function App() {
   return (
-    <h1>hello World</h1>
+    <div>
+      <header>
+        <h1>My favorite tree</h1>
+      </header>
+      <Tree />
+    </div>
   );
 }
 
