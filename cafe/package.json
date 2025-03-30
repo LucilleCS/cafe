@@ -1,6 +1,6 @@
 {
-  "homepage": "https://github.com/LucilleCS/cafe/",
-  "name": "cafe",
+  "homepage": "/cafe",
+  "name": "cafe/cafe",
   "version": "0.1.0",
   "private": false,
   "dependencies": {
