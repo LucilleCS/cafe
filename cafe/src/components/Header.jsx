@@ -6,9 +6,18 @@ function Header() {
   return (
     <header>
       <nav>
-        <ul>
+        <ul id="navigation" className="columns hide-small">
           <li>
-            <Link to="/">Home</Link>
+            <Link to="/Home">Home</Link>
+          </li>
+          <li>
+            <Link to="/Reservation">Reservation</Link>
+          </li>
+          <li>
+            <Link to="/Shop">Shop</Link>
+          </li>
+          <li>
+            <Link to="/Menu">Menu</Link>
           </li>
           <li>
             <Link to="/Cats">Cats</Link>

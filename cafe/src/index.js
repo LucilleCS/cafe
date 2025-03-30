@@ -6,17 +6,22 @@ import Cats from "./pages/Cats";
 import ContactUs from "./pages/ContactUs";
 import Menu from "./pages/Menu";
 import NoPage from "./pages/NoPage";
+import Reservation from "./pages/Reservation";
+import Shop from "./pages/Shop";
 
 export default function App() {
   return (
-    <BrowserRouter basename={process.env.PUBLIC_URL}>
+    <BrowserRouter basename= "/cafe">
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
           <Route path="Cats" element={<Cats />} />
           <Route path="ContactUs" element={<ContactUs />} />
-          <Route path="*" element={<Menu />} />
+          <Route path="Reservation" element={<Reservation />} />
+          <Route path="Shop" element={<Shop />} />
+          <Route path="Menu" element={<Menu />} />
           <Route path="*" element={<NoPage />} />
+          <Route path="Home" element={<Home />} />
         </Route>
       </Routes>
     </BrowserRouter>

@@ -1,0 +1,45 @@
+img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+  }
+  
+  #shopPage {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .shopItem {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+    align-items: center;
+    width: 300px;
+    margin: 20px; 
+    background-color: antiquewhite;
+    padding: 10px;
+    height: 400px;
+    border-right: 10px solid black;
+    border-bottom: 10px solid black;
+    border-top: 2px solid black;
+    box-sizing: border-box; 
+    
+  }
+  
+  @media (min-width: 1000px) {
+    #shopPage {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  
+    .shopItem {
+      width: 250px; 
+      margin: 20px; 
+    }
+  }
+  
