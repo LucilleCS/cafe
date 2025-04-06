@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/cafe/static/css/main.cb2f2dbd.css",
-    "main.js": "/cafe/static/js/main.35af1a25.js",
+    "main.css": "/cafe/static/css/main.a0f22ed4.css",
+    "main.js": "/cafe/static/js/main.20ad1bfb.js",
     "static/media/snackTray.jpg": "/cafe/static/media/snackTray.360c467c54619fdad6db.jpg",
     "static/media/darkRoast.jpg": "/cafe/static/media/darkRoast.85bb2093fc2c15a2ae8e.jpg",
     "static/media/lightRoast.jpg": "/cafe/static/media/lightRoast.9c197c411a77ae60cbae.jpg",
@@ -15,25 +15,20 @@
     "static/media/salad.png": "/cafe/static/media/salad.a6cc31d4f71723f7bfaa.png",
     "static/media/sandwich.png": "/cafe/static/media/sandwich.0b71c2286397a06d2436.png",
     "static/media/coffeeMug.png": "/cafe/static/media/coffeeMug.d0587898f9c80685c770.png",
-    "static/media/worm.jpg": "/cafe/static/media/worm.f21bc7818856d8d039bb.jpg",
-    "static/media/milo.jpg": "/cafe/static/media/milo.d0ea6a4ac299896f8980.jpg",
-    "static/media/morgana.jpg": "/cafe/static/media/morgana.ab2681f27305dd2b79e1.jpg",
     "static/media/hotChocolate.jpg": "/cafe/static/media/hotChocolate.470aa413332777f58314.jpg",
     "static/media/tea.jpg": "/cafe/static/media/tea.69541781e7677ea9f364.jpg",
     "static/media/oscar.jpg": "/cafe/static/media/oscar.68d8924a85915f60705d.jpg",
-    "static/media/dusty.jpg": "/cafe/static/media/dusty.60199e9409afd59c243f.jpg",
     "static/media/sweetTea.jpg": "/cafe/static/media/sweetTea.9ed55ae5b7a024c8926d.jpg",
     "static/media/lemonade.jpg": "/cafe/static/media/lemonade.9ddbd69ce3a280c8ea2c.jpg",
-    "static/media/soot.jpg": "/cafe/static/media/soot.ec813924021c21a2152b.jpg",
     "static/media/twitter.png": "/cafe/static/media/twitter.7e40f617aaa8eca864bb.png",
     "static/media/instagram.png": "/cafe/static/media/instagram.ac32ec0a111aeba03298.png",
     "static/media/facebook.png": "/cafe/static/media/facebook.8d51a55626e9bf107f8f.png",
     "index.html": "/cafe/index.html",
-    "main.cb2f2dbd.css.map": "/cafe/static/css/main.cb2f2dbd.css.map",
-    "main.35af1a25.js.map": "/cafe/static/js/main.35af1a25.js.map"
+    "main.a0f22ed4.css.map": "/cafe/static/css/main.a0f22ed4.css.map",
+    "main.20ad1bfb.js.map": "/cafe/static/js/main.20ad1bfb.js.map"
   },
   "entrypoints": [
-    "static/css/main.cb2f2dbd.css",
-    "static/js/main.35af1a25.js"
+    "static/css/main.a0f22ed4.css",
+    "static/js/main.20ad1bfb.js"
   ]
 }
