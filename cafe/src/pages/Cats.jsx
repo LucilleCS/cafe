@@ -5,11 +5,12 @@ import "./pagesCSS/Cats.css"
 
 const Cats = () => {
     const [cats, setCats] = useState([]);
-
-    // Fetch cat data after page loads
     useEffect(() => {
         (async () => {
-            const response = await axios.get("http://localhost:3001/api/cats");
+            const response = await axios.get(
+              //"http://localhost:3001/api/cats"
+              "https://cafe-backend-6f5d.onrender.com/api/cats"
+            );
             setCats(response.data);
         })();
     }, []);
@@ -18,13 +19,13 @@ const Cats = () => {
         <div id="cats" className="columns">
             {cats.map((cat) => (
                 <ACat
-                    key={cat.name}   // Use a unique key (such as the cat's name or id)
+                    key={cat.name}   
                     name={cat.name}
                     age={cat.age}
                     gender={cat.gender}
                     personality={cat.personality}
                     favorite_activity={cat.favorite_activity}
-                    img_name={cat.img_name}   // Image path
+                    img_name={cat.img_name}   
                 />
             ))}
         </div>

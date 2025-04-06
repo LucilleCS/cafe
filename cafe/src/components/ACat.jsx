@@ -1,11 +1,11 @@
 function ACat(props) {
     return (
       <section className="catItem">
-        <a href="#"> {/* Wrap the content in an anchor tag if necessary */}
+        <a href="#"> {}
           <div id="aboutCat">
             <div className="catImg">
               <img 
-                  src={"http://localhost:3001/" + props.img_name} 
+                  src={"https://cafe-backend-6f5d.onrender.com/" + props.img_name} 
                   alt={props.name} 
               />
             </div>
