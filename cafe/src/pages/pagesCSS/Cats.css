@@ -42,6 +42,18 @@ img {
   height: auto; 
 }
 
+#catButton {
+  display: flex;
+  align-items: center;
+  width: 95%;
+}
+
+#add-cat {
+  margin-left: auto;
+
+}
+
+
 @media (min-width: 1000px) {
   .catItem {
       width: 50%;
@@ -50,5 +62,24 @@ img {
   .catImg {
       width: 300px;  
       height: auto;
+  }
+}
+
+/* Responsive layout for small screens */
+@media (max-width: 768px) {
+  #aboutCat {
+    flex-direction: column; 
+  }
+
+  .catItem {
+    flex-direction: column;
+    width: 90%; 
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .catImg {
+    width: 100%; 
+    height: auto;
   }
 }
