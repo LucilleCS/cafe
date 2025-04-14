@@ -11,10 +11,13 @@ const AddDialog = (props) => {
 
     const formData = new FormData(event.target);
 
-    const response = await fetch("https://cafe-backend-6f5d.onrender.com", {
-      method: "POST",
-      body: formData,
-    });
+    const response = await fetch(
+      "https://cafe-backend-6f5d.onrender.com/api/cats/",
+      {
+        method: "POST",
+        body: formData,
+      }
+    );
 
     if (response.status === 200) {
       setResult("Cat Successfully Added");
