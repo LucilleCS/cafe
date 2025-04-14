@@ -11,7 +11,7 @@ const AddDialog = (props) => {
 
     const formData = new FormData(event.target);
 
-    const response = await fetch("http://localhost:3001/api/cats/", {
+    const response = await fetch("https://cafe-backend-6f5d.onrender.com", {
       method: "POST",
       body: formData,
     });
