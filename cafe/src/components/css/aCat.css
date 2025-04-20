@@ -1,0 +1,10 @@
+#change-buttons {
+  display: flex;
+  flex-direction: row;
+}
+#edit {
+  margin-right: 10px;
+  margin-left: 10px;
+  position: relative;
+  top: 20px;
+}

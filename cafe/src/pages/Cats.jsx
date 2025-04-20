@@ -35,7 +35,7 @@ const Cats = () => {
         <button id="add-cat" onClick={openAddDialog}>
           +
         </button>
-        
+
         {showAddDialog ? (
           <AddDialog closeDialog={closeAddDialog} addCat={addCat} />
         ) : (
@@ -46,6 +46,7 @@ const Cats = () => {
       {cats.map((cat) => (
         <ACat
           key={cat.name}
+          _id={cat._id}
           name={cat.name}
           age={cat.age}
           gender={cat.gender}
@@ -56,6 +57,8 @@ const Cats = () => {
       ))}
     </div>
   );
+
+  <h1>HELLO</h1>;
 };
 
 export default Cats;
