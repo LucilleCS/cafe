@@ -45,7 +45,7 @@ const Cats = () => {
 
       {cats.map((cat) => (
         <ACat
-          key={cat.name}
+          key={cat._id}
           _id={cat._id}
           name={cat.name}
           age={cat.age}
@@ -57,8 +57,6 @@ const Cats = () => {
       ))}
     </div>
   );
-
-  <h1>HELLO</h1>;
 };
 
 export default Cats;

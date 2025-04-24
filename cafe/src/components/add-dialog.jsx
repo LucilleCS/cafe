@@ -7,26 +7,37 @@ const AddDialog = (props) => {
 
   const onSubmit = async (event) => {
     event.preventDefault();
-    setResult("sending ");
+    setResult("Sending...");
 
     const formData = new FormData(event.target);
 
-    const response = await fetch(
-      "https://cafe-backend-6f5d.onrender.com/api/cats/",
-      {
-        method: "POST",
-        body: formData,
-      }
-    );
+    try {
+      const response = await fetch(
+        "https://cafe-backend-6f5d.onrender.com/api/cats/",
+        {
+          method: "POST",
+          body: formData,
+        }
+      );
 
-    if (response.status === 200) {
+      const newCat = await response.json();
+
+      if (!response.ok) {
+        console.error("Error from backend:", newCat);
+        setResult(
+          "Error adding cat: " + (newCat.message || response.statusText)
+        );
+        return;
+      }
+
+      console.log("Cat added successfully:", newCat);
       setResult("Cat Successfully Added");
-      event.target.reset(); //reset your form fields
-      props.addCat(await response.json());
+      props.addCat(newCat);
+      event.target.reset();
       props.closeDialog();
-    } else {
-      console.log("Error adding cat", response);
-      setResult(response.message);
+    } catch (err) {
+      console.error("error", err);
+      setResult("error");
     }
   };
 
@@ -56,7 +67,7 @@ const AddDialog = (props) => {
 
           <form id="add-cat-form" onSubmit={onSubmit}>
             <p>
-              <label htmlFor="name ">Cat Name</label>
+              <label htmlFor="name">Cat Name</label>
               <input
                 type="text"
                 id="name"
@@ -92,7 +103,7 @@ const AddDialog = (props) => {
             </p>
 
             <p>
-              <label htmlFor="personality">Cats personality</label>
+              <label htmlFor="personality">Cat Personality</label>
               <input
                 type="text"
                 id="personality"
@@ -104,7 +115,7 @@ const AddDialog = (props) => {
             </p>
 
             <p>
-              <label htmlFor="activity">Cats activity</label>
+              <label htmlFor="activity">Cat Activity</label>
               <input
                 type="text"
                 id="activity"
@@ -140,7 +151,7 @@ const AddDialog = (props) => {
             <p>
               <button type="submit">Submit</button>
             </p>
-            <p> {result} </p>
+            <p>{result}</p>
           </form>
         </div>
       </div>
