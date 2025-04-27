@@ -27,9 +27,14 @@ const EditDialog = (props) => {
   };
 
   const handleImageChange = (event) => {
-    const name = event.target.name;
-    const value = event.target.files[0];
-    setInputs((values) => ({ ...values, [name]: value }));
+    const file = event.target.files[0];
+    if (file) {
+      setInputs((values) => ({
+        ...values,
+        img_name: URL.createObjectURL(file),
+        img_file: file,
+      }));
+    }
   };
 
   const onSubmit = async (event) => {
@@ -140,7 +145,7 @@ const EditDialog = (props) => {
                 <input
                   type="file"
                   id="img_name"
-                  name="img_name"
+                  name="img"
                   accept="image/*"
                   onChange={handleImageChange}
                 />
